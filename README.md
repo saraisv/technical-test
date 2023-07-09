@@ -1,7 +1,10 @@
 # TECHNICAL TEST APP
 
 > This project is an application for technical testing with a login, role-based navigation and API consumption with paging and detail screen.
+> 
+> 
 > Credentials for login:
+
 -Admin:
 - admin@innova.com
 - Admin.123
