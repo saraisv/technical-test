@@ -1,0 +1,34 @@
+<div class="user-container">
+    <nav class="navbar">
+        <button mat-icon-button class="navbar-menu__icon" *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+            <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+        </button>
+        <span class="navbar-spacer"></span>
+        <div class="navbar-menu">
+            <div class="navbar-menu__user">
+                <span class="navbar-menu__route">
+                    <p>User Dashboard</p>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav="matSidenav" class="sidebar-container mat-elevation-z1">
+            <div class="sidebar">
+                <div class="sidebar__user">
+                    <a class="sidebar__user__edit">
+                        <p role="listitem" routerLink="/user/home-user" routerLinkActive="active">Home</p>
+                    </a>
+                </div>
+                <div class="sidebar__button__design">
+                    <button mat-raised-button color="primary" (click)="onLogout()">Log out</button>
+                </div>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

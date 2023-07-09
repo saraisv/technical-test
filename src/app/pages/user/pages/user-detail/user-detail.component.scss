@@ -1,0 +1,14 @@
+.detail {
+    display: flex;
+    gap: 25px;
+
+    padding: 60px 30px;
+
+    &__data {
+        padding: 10px;
+    }
+}
+
+.indicator {
+    font-weight: bold;
+}

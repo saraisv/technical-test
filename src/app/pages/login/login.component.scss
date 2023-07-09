@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__fields{
+      display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+  }
+
+  .btn {
+    &__login {
+        width: 100%;
+    }
+  }

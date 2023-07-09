@@ -1,0 +1,12 @@
+.home {
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}

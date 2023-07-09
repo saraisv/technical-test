@@ -1,0 +1,15 @@
+<ng-container *ngIf="isLoading; else displayData">
+    <p>Loading...</p>
+</ng-container>
+
+<ng-template #displayData>
+    <div class="detail">
+        <div class="detail__photo">
+            <img [src]="photoDetail?.url" alt="photoDetail?.albumId" width="300" height="300">
+        </div>
+        <div class="detail__data data">
+            <p><span class="indicator">Title:</span> {{photoDetail?.title}}</p>
+            <p><span class="indicator">Album:</span> {{photoDetail?.albumId}}</p>
+        </div>
+    </div>
+</ng-template>

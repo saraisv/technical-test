@@ -1,0 +1,11 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="truncate">{{photo.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src={{photo.thumbnailUrl}} [alt]="photo.title">
+  <mat-card-content class="content">
+    <p>
+      {{photo.title}}
+    </p>
+  </mat-card-content>
+</mat-card>

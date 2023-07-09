@@ -1,0 +1,9 @@
+<div class="home">
+    <div class="gallery">
+        <ng-container *ngFor="let photo of photos">
+            <app-inn-card [photo]="photo" (click)="goToDetail(photo.id)"></app-inn-card>
+        </ng-container>
+    </div>
+    <button mat-flat-button color="primary" (click)="loadMore()" [disabled]="isLoading">{{ isLoading ? 'Loading...' :
+        'Load more'}}</button>
+</div>
